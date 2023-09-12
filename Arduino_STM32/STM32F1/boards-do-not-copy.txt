@@ -1,0 +1,8 @@
+# Append the following lines to your $path/STM32F1/boards.txt file:
+# If desired, replace 'genericSTM32F103C' with the appropriate STM32 MCU series you're using.
+# STM32 OTA uploading mechanism introduced by CSNOL.
+
+genericSTM32F103C.menu.upload_method.httpMethod=STM32 OTA
+genericSTM32F103C.menu.upload_method.httpMethod.upload.protocol=stm32_ota
+genericSTM32F103C.menu.upload_method.httpMethod.upload.tool=stm32_ota
+genericSTM32F103C.menu.upload_method.httpMethod.upload.IPAddress=http://192.168.0.66  # Change to your ESP8266 board's IPAddress
